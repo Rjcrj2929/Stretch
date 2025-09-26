@@ -503,7 +503,7 @@ footer .copyright {
 
 
 /* Mobile */
-@media (max-width: 1180px) {
+@media (max-width: 1100px) {
   /* Header */
   header {
     flex-direction: column;
@@ -631,7 +631,7 @@ header > .theme-switch-wrapper {
 
 
 
-@media (max-width: 1180px) {
+@media (max-width: 700px) {
 
     /* Header */
   header {
@@ -653,6 +653,7 @@ header > .theme-switch-wrapper {
 
 
 }
+
 
 
 
