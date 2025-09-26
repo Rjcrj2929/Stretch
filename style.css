@@ -496,6 +496,7 @@ footer .copyright {
   color: #383838;
 }
 
+
 /* ===========================
    RESPONSIVE DESIGN
    =========================== */
@@ -507,14 +508,15 @@ footer .copyright {
   header {
     flex-direction: column;
     align-items: center;
-    padding: 1rem 2rem 5rem;
+    padding: 1rem 2rem ;
     gap: 1rem;
   }
 
 /* Position hamburger bottom-left */
 .menu-toggle {
   position: absolute;
-  bottom: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: 3rem;
   display: block;
   font-size: 2rem;
@@ -524,8 +526,9 @@ footer .copyright {
 /* Position theme switcher bottom-right */
 header > .theme-switch-wrapper {
   position: absolute;
-  bottom: 1rem;
-  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -624,26 +627,27 @@ header > .theme-switch-wrapper {
   }
 }
 
-/* Small mobile screens 
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.2rem;
-  }
-
-  .hero h2 {
-    font-size: 1.6rem;
-  }
-
-  .hero .btn {
-    padding: 8px 14px;
-    font-size: 0.8rem;
-  }
-
-  .about h3,
-  .services h3,
-  .testimonials h3,
-  .location-map h3 {
-    font-size: 1.5rem;
-  }
-} */
  
+
+
+
+@media (max-width: 700px) {
+
+    /* Header */
+  header {
+    padding: 1rem 2rem;
+  }
+
+  header .brand h1, header .brand{
+    font-size: .65rem;
+  }
+
+  header .brand .brand-logo{
+    width: 50px;
+    height: auto;
+  }
+
+
+}
+
+
