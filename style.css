@@ -79,6 +79,15 @@ header nav a {
   
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111;
+}
+
 header nav a:hover {
   color: #c04000;
 }
@@ -497,20 +506,50 @@ footer .copyright {
   /* Header */
   header {
     flex-direction: column;
-    align-items: stretch;
-    padding: 1rem 2rem;
+    align-items: center;
+    padding: 1rem 2rem 5rem;
     gap: 1rem;
   }
+
+/* Position hamburger bottom-left */
+.menu-toggle {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  display: block;
+  font-size: 2rem;
+  z-index: 1001;
+}
+
+/* Position theme switcher bottom-right */
+header > .theme-switch-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
 
   header nav {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 1rem;
+    display: none; /* hide nav by default */
+    flex-direction: column;
+    background-color: #eeeeee;
+    padding: 1rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%; /* below header */
+    left: 0;
+    right: 0;
+    z-index: 999;
   }
 
-  header nav a{
-    padding: 6px 10px;
+    header nav.show {
+    display: flex; /* show when toggled */
+    }
+
+ header nav a {
+    padding: 10px;
+    text-align: center;
     border-radius: 4px;
   }
 
@@ -518,14 +557,19 @@ footer .copyright {
     background-color: #2c2c2c;
   }
 
-  .right-buttons {
-    position: absolute;  /* take it out of normal flow */
-    top: 1rem;           /* place it near the top */
-    right: 1rem;         /* align to the right */
-    margin: 0;           /* remove extra margins */
-    gap: 0.5rem;
+    body.dark-mode header nav {
+    background-color: #2c2c2c;
   }
 
+
+
+    /* Put the switcher inside nav at the bottom */
+  nav .theme-switch-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
   /* Hero */
   .hero {
     height: 60vh;
