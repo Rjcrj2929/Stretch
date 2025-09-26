@@ -647,7 +647,12 @@ header > .theme-switch-wrapper {
     height: auto;
   }
 
+  .mode-icon{
+    display: none;
+  }
+
 
 }
+
 
 
