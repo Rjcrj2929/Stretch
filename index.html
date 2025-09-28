@@ -2,293 +2,742 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ryan James Chia - Industrial Designer, UI/UX Designer, and Web Developer Portfolio">
-    <meta name="keywords" content="Industrial Design, UI/UX, Web Development, Portfolio, Ryan James Chia">
-    <meta name="author" content="Ryan James Chia">
-    <title>Ryan James Chia - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ryan James Chia - Portfolio</title>
+     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="site-header" role="banner">
-        <div class="logo">
-            <img src="Images/Image.png" alt="Ryan James Chia Profile Picture" class="profile-icon" tabindex="1">
-            <span class="name">Ryan James Chia</span>
-        </div>
 
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <ul>
-                <li><a href="#about" tabindex="2">About</a></li>
-                <li><a href="#timeline" tabindex="3">Education & Experience</a></li>
-                <li><a href="#projects" tabindex="4">Projects</a></li>
-                <li><a href="#contact" id="contactnav" tabindex="5">Contact</a></li>
-            </ul>
-        </nav>
+     <!-- HEADER -->
+     <header class="site-header">
+          <div class="logo">
+               <img src="Images/Image.png" alt="Profile" class="profile-icon" tabindex="1">
+               <span class="name">Ryan James Chia</span>
+          </div>
+          <nav class="navbar">
+               <ul>
+                    <li><a href="#about" tabindex="2">About</a></li>
+                    <li><a href="#timeline" tabindex="3">Education & Experience</a></li>
+                    <li><a href="#projects" tabindex="4">Projects</a></li>
+                    <li><a href="#contact" id="contactnav" tabindex="5">Contact</a></li>
+               </ul>
+          </nav>
 
-        <div class="dark-mode-toggle" aria-label="Theme toggle">
-            <img src="Images/SunDark.png" alt="" class="mode-icon sun-dark" aria-hidden="true">
-            <img src="Images/SunLight.png" alt="" class="mode-icon sun-light" aria-hidden="true">
+          <div class="dark-mode-toggle">
+               <img src="Images/SunDark.png" alt="Sun Dark" class="mode-icon sun-dark" />
+               <img src="Images/SunLight.png" alt="Sun Light" class="mode-icon sun-light" />
 
-            <label class="theme-switch" for="darkmode-toggle" aria-label="Toggle dark mode">
-                <input type="checkbox" id="darkmode-toggle" tabindex="6" aria-describedby="theme-description">
-                <span class="slider round"></span>
-            </label>
-            <span id="theme-description" class="sr-only"></span>
+               <label class="theme-switch" for="darkmode-toggle">
+                    <input type="checkbox" id="darkmode-toggle" tabindex="6" />
+                    <span class="slider round"></span>
+               </label>
 
-            <img src="Images/MoonLight.png" alt="" class="mode-icon moon-light" aria-hidden="true">
-            <img src="Images/MoonDark.png" alt="" class="mode-icon moon-dark" aria-hidden="true">
-        </div>
-    </header>
+               <img src="Images/MoonLight.png" alt="Moon Light" class="mode-icon moon-light" />
+               <img src="Images/MoonDark.png" alt="Moon Dark" class="mode-icon moon-dark" />
+          </div>
+     </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about" tabindex="7">
-            <div class="about-intro">
-                <img src="Images/Image.png" alt="Ryan James Chia Hero Photo" class="hero-photo" tabindex="8">
-                <h1>Ryan James Chia</h1>
-                <p>
-                    I am a fast learner with a strong curiosity for understanding systems and optimising processes. 
-                    As a proactive problem-solver, I strive to find simple and effective solutions that save time, 
-                    improve productivity, and create smoother experience. With a passion for user-centric design, 
-                    I enjoy enhancing workflows and making interactions more intuitive. As a recent diploma graduate, 
-                    I am actively seeking work experience that will allow me to contribute to a team while continuing 
-                    to grow my skills in design, communication and beyond. I bring a strong work ethic, a willingness 
-                    to adapt, and a genuine enthusiasm to take on new challenges.
-                </p>
-            </div>
+     <!-- ABOUT ME -->
+     <section id="about" class="about" tabindex="7">
+          <div>
+          <img src="Images/Image.png" alt="Profile Hero" class="hero-photo" tabindex="8">
+          <br>
+          <h1>Ryan James Chia</h1>
+          <p>I am a fast learner with a strong curiosity for understanding systems and optimising processes. As a
+               proactive problem-solver, I strive to find simple and effective solutions that save time, improve
+               productivity, and create smoother experience. With a passion for user-centric design, I enjoy enhancing
+               workflows and making interactions more intuitive. As a recent diploma graduate, I am actively seeking
+               work experience that will allow me to contribute to a team while continuing to grow my skills in design,
+               communication and beyond. I bring a strong work ethic, a willingness to adapt, and a genuine enthusiasm
+               to take on new challenges.</p>     
+          </div>
+          <div>
 
-            <div class="about-skills">
-                <h2>Skills</h2>
-                <div class="skills" role="list" aria-label="Technical skills">
-                    <span class="skill-btn" tabindex="9" role="listitem">Adobe Photoshop</span>
-                    <span class="skill-btn" tabindex="10" role="listitem">Adobe Illustrator</span>
-                    <span class="skill-btn" tabindex="11" role="listitem">Figma</span>
-                    <span class="skill-btn" tabindex="12" role="listitem">Sketch</span>
-                    <span class="skill-btn" tabindex="13" role="listitem">UI/UX Design</span>
-                    <span class="skill-btn" tabindex="14" role="listitem">Web Design</span>
-                    <span class="skill-btn" tabindex="15" role="listitem">3D Modeling</span>
-                    <span class="skill-btn" tabindex="16" role="listitem">HTML/CSS</span>
+          <h2>Skills</h2>
+          <div class="skills">
+               <span class="skill-btn" tabindex="9">Adobe Photoshop</span>
+               <span class="skill-btn" tabindex="10">Adobe Illustrator</span>
+               <span class="skill-btn" tabindex="11">Figma</span>
+               <span class="skill-btn" tabindex="12">Sketch</span>
+               <span class="skill-btn" tabindex="13">UI/UX Design</span>
+               <span class="skill-btn" tabindex="14">Web Design</span>
+               <span class="skill-btn" tabindex="15">3D Modeling</span>
+               <span class="skill-btn" tabindex="16">HTML/CSS</span>
+          </div>
+          </div>
+          <div>
+
+          <h2>Software</h2>
+          <div class="software">
+               <span class="skill-btn" tabindex="17">Adobe Photoshop</span>
+               <span class="skill-btn" tabindex="18">Adobe Illustrator</span>
+               <span class="skill-btn" tabindex="19">Figma</span>
+               <span class="skill-btn" tabindex="20">Sketch</span>
+               <span class="skill-btn" tabindex="21">UI/UX Design</span>
+               <span class="skill-btn" tabindex="22">Web Design</span>
+               <span class="skill-btn" tabindex="23">3D Modeling</span>
+               <span class="skill-btn" tabindex="24">HTML/CSS</span>
+          </div>
+          </div>
+     </section>
+
+     <!-- EDUCATION & EXPERIENCE -->
+     <section class="timeline-section" tabindex="25">
+        <h2>Education & Experience</h2>
+        
+        <div class="timeline-container" tabindex="26">
+            <div class="timeline-wrapper">
+                <!-- Year markers -->
+                <div class="year-markers">
+                    <div class="year-marker">2020</div>
+                    <div class="year-marker">2021</div>
+                    <div class="year-marker">2022</div>
+                    <div class="year-marker">2023</div>
+                    <div class="year-marker">2024</div>
+                    <div class="year-marker">2025</div>
                 </div>
-            </div>
-
-            <div class="about-software">
-                <h2>Software</h2>
-                <div class="software" role="list" aria-label="Software proficiency">
-                    <span class="skill-btn" tabindex="17" role="listitem">Adobe Photoshop</span>
-                    <span class="skill-btn" tabindex="18" role="listitem">Adobe Illustrator</span>
-                    <span class="skill-btn" tabindex="19" role="listitem">Figma</span>
-                    <span class="skill-btn" tabindex="20" role="listitem">Sketch</span>
-                    <span class="skill-btn" tabindex="21" role="listitem">Fusion 360</span>
-                    <span class="skill-btn" tabindex="22" role="listitem">KeyShot</span>
-                    <span class="skill-btn" tabindex="23" role="listitem">Blender</span>
-                    <span class="skill-btn" tabindex="24" role="listitem">VS Code</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- TIMELINE SECTION -->
-        <section id="timeline" class="timeline-section" tabindex="25">
-            <h2>Education & Experience</h2>
-            
-            <div class="timeline-container" tabindex="26" role="img" aria-label="Interactive timeline showing education and work experience">
-                <div class="timeline-wrapper">
-                    <!-- Year markers -->
-                    <div class="year-markers" role="presentation" aria-hidden="true">
-                        <div class="year-marker">2020</div>
-                        <div class="year-marker">2021</div>
-                        <div class="year-marker">2022</div>
-                        <div class="year-marker">2023</div>
-                        <div class="year-marker">2024</div>
-                        <div class="year-marker">2025</div>
+                
+                <!-- Timeline tracks -->
+                <div class="timeline-tracks">
+                    <!-- Education Track -->
+                    <div class="track" id="education-track">
+                        <div class="track-label">Education</div>
                     </div>
                     
-                    <!-- Timeline tracks -->
-                    <div class="timeline-tracks">
-                        <!-- Education Track -->
-                        <div class="track" id="education-track" role="group" aria-label="Education timeline">
-                            <div class="track-label">Education</div>
-                        </div>
-                        
-                        <!-- Experience Track -->
-                        <div class="track" id="experience-track" role="group" aria-label="Work experience timeline">
-                            <div class="track-label">Experience</div>
-                        </div>
+                    <!-- Experience Track -->
+                    <div class="track" id="experience-track">
+                        <div class="track-label">Experience</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-
-            <!-- Category Tabs -->
-            <div class="tabs" role="tablist" aria-label="Project categories">
-                <button data-category="industrial" class="active" tabindex="50" role="tab" 
-                        aria-selected="true" aria-controls="industrial-projects" id="tab-industrial">
-                    Industrial Design
-                </button>
-                <button data-category="uiux" tabindex="51" role="tab" 
-                        aria-selected="false" aria-controls="uiux-projects" id="tab-uiux">
-                    UI/UX
-                </button>
-                <button data-category="webdev" tabindex="52" role="tab" 
-                        aria-selected="false" aria-controls="webdev-projects" id="tab-webdev">
-                    Web Development
-                </button>
-                <button data-category="events" tabindex="53" role="tab" 
-                        aria-selected="false" aria-controls="events-projects" id="tab-events">
-                    Events
-                </button>
-                <button data-category="social" tabindex="54" role="tab" 
-                        aria-selected="false" aria-controls="social-projects" id="tab-social">
-                    Social Media
-                </button>
-                <button data-category="graphic" tabindex="55" role="tab" 
-                        aria-selected="false" aria-controls="graphic-projects" id="tab-graphic">
-                    Graphic Design
-                </button>
-            </div>
-
-            <!-- Project Carousel -->
-            <div class="project-carousel" role="region" aria-label="Project showcase carousel">
-                <button class="arrow left" tabindex="56" aria-label="Previous project">
-                    <span aria-hidden="true">&#8592;</span>
-                </button>
-
-                <div class="project-cards-container" role="tabpanel" 
-                     aria-labelledby="tab-industrial" id="industrial-projects">
-                    
-                    <!-- Industrial Design Projects -->
-                    <article class="project-card" data-category="industrial" tabindex="57">
-                        <img src="Images/Image.png" alt="Industrial Design Project 1 Preview">
-                        <div class="project-info">
-                            <h3>Project Title 1</h3>
-                            <dl>
-                                <dt>Description:</dt>
-                                <dd>Short description of the project.</dd>
-                                
-                                <dt>Skills:</dt>
-                                <dd>Sketching, CAD</dd>
-                                
-                                <dt>Date:</dt>
-                                <dd>Jan 2025</dd>
-                                
-                                <dt>Details:</dt>
-                                <dd>Your role, challenges, solutions, and results.</dd>
-                            </dl>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="industrial" tabindex="58">
-                        <img src="Images/Image.png" alt="Industrial Design Project 2 Preview">
-                        <div class="project-info">
-                            <h3>Project Title 2</h3>
-                            <dl>
-                                <dt>Description:</dt>
-                                <dd>Another short description.</dd>
-                                
-                                <dt>Skills:</dt>
-                                <dd>CAD, Prototyping</dd>
-                                
-                                <dt>Date:</dt>
-                                <dd>Mar 2025</dd>
-                                
-                                <dt>Details:</dt>
-                                <dd>Your role, challenges, solutions, and results.</dd>
-                            </dl>
-                        </div>
-                    </article>
-
-                    <!-- UI/UX Projects -->
-                    <article class="project-card" data-category="uiux" tabindex="59">
-                        <img src="Images/Image.png" alt="UI/UX Project 1 Preview">
-                        <div class="project-info">
-                            <h3>UI/UX Project 1</h3>
-                            <dl>
-                                <dt>Description:</dt>
-                                <dd>Short description.</dd>
-                                
-                                <dt>Skills:</dt>
-                                <dd>Figma, Prototyping</dd>
-                                
-                                <dt>Date:</dt>
-                                <dd>Feb 2025</dd>
-                                
-                                <dt>Details:</dt>
-                                <dd>Your role, challenges, solutions, and results.</dd>
-                            </dl>
-                        </div>
-                    </article>
-                </div>
-
-                <button class="arrow right" tabindex="60" aria-label="Next project">
-                    <span aria-hidden="true">&#8594;</span>
-                </button>
-            </div>
-        </section>
-    </main>
-
-    <!-- MODALS -->
-    <!-- Timeline Details Modal -->
-    <div id="modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-content" role="document">
-            <button class="close" tabindex="0" aria-label="Close modal">
-                <span aria-hidden="true">&times;</span>
-            </button>
+    <!-- Modal -->
+    <div id="modal" class="modal" tabindex="-1">
+        <div class="modal-content">
+            <span class="close" tabindex="0">&times;</span>
             <div id="modal-body"></div>
         </div>
     </div>
 
-    <!-- Image Viewer Modal -->
-    <div id="image-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="image-modal-title" aria-hidden="true">
-        <button class="close-image" tabindex="0" aria-label="Close image viewer">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <img class="modal-img" id="modal-img" src="" alt="">
-        <div id="image-modal-title" class="sr-only">Enlarged image view</div>
-    </div>
+    <!-- Image Modal -->
+<div id="image-modal" class="modal" tabindex="-1">
+    <span class="close-image" tabindex="0">&times;</span>
+    <img class="modal-img" id="modal-img" src="" alt="Enlarged Image">
+</div>
 
-    <!-- FOOTER -->
-    <footer class="site-footer" id="contact" role="contentinfo">
-        <div class="footer-content">
-            <h2 class="footer-title">Get In Touch</h2>
-            <p><strong>Ryan James Chia</strong> - Designer, Creator, and Innovator</p>
-            
-            <div class="contact-info">
-                <p>
-                    <span aria-label="Phone number">📞</span>
-                    <a href="tel:+65XXXXXXXX">+65 XXXX XXXX</a>
-                </p>
-                <p>
-                    <span aria-label="Email">✉️</span>
-                    <a href="mailto:email@example.com">email@example.com</a>
-                </p>
-            </div>
-            
-            <div class="social-links">
-                <a href="#" tabindex="61" aria-label="LinkedIn Profile">LinkedIn</a>
-                <a href="#" tabindex="62" aria-label="Instagram Profile">Instagram</a>
-                <a href="#" tabindex="63" aria-label="TikTok Profile">TikTok</a>
-            </div>
-            
-            <p class="copyright">
-                &copy; <span id="current-year"></span> Ryan James Chia. All rights reserved.
-            </p>
-        </div>
-    </footer>
+     <!-- PROJECTS -->
+     <section id="projects" class="projects">
+          <h2>Projects</h2>
+
+          <!-- Tabs -->
+          <div class="tabs">
+               <button data-category="industrial" class="active" tabindex="50">Industrial Design</button>
+               <button data-category="uiux" tabindex="51">UI/UX</button>
+               <button data-category="webdev" tabindex="52">Web Development</button>
+               <button data-category="events" tabindex="53">Events</button>
+               <button data-category="social" tabindex="54">Social Media</button>
+               <button data-category="graphic" tabindex="55">Graphic Design</button>
+          </div>
+
+          <!-- Carousel -->
+          <div class="project-carousel">
+               <button class="arrow left" tabindex="56">&#8592;</button>
+               <div class="project-cards-container">
+                    <!-- Industrial Projects -->
+                    <div class="project-card" data-category="industrial" tabindex="57">
+                         <img src="Images/Image.png" alt="Project Image">
+                         <div class="project-info">
+                              <h3>Project Title 1</h3>
+                              <p><strong>Description:</strong> Short description of the project.</p>
+                              <p><strong>Skills:</strong> Sketching, CAD</p>
+                              <p><strong>Date:</strong> Jan 2025</p>
+                              <p><strong>Details:</strong> Your role, challenges, solutions, and results.</p>
+                         </div>
+                    </div>
+
+                    <div class="project-card" data-category="industrial" tabindex="58">
+                         <img src="Images/Image.png" alt="Project Image">
+                         <div class="project-info">
+                              <h3>Project Title 2</h3>
+                              <p><strong>Description:</strong> Another short description.</p>
+                              <p><strong>Skills:</strong> CAD, Prototyping</p>
+                              <p><strong>Date:</strong> Mar 2025</p>
+                              <p><strong>Details:</strong> Your role, challenges, solutions, and results.</p>
+                         </div>
+                    </div>
+
+                    <!-- UI/UX Projects -->
+                    <div class="project-card" data-category="uiux" tabindex="59">
+                         <img src="Images/Image.png" alt="Project Image">
+                         <div class="project-info">
+                              <h3>UI/UX Project 1</h3>
+                              <p><strong>Description:</strong> Short description.</p>
+                              <p><strong>Skills:</strong> Figma, Prototyping</p>
+                              <p><strong>Date:</strong> Feb 2025</p>
+                              <p><strong>Details:</strong> Your role, challenges, solutions, and results.</p>
+                         </div>
+                    </div>
+               </div>
+               <button class="arrow right" tabindex="60">&#8594;</button>
+          </div>
+     </section>
+
+     <!-- FOOTER -->
+     <footer class="site-footer" id="contact">
+          <p><strong>Ryan James Chia</strong> - Designer, Creator, and Innovator</p>
+          <p>📞 +65 XXXX XXXX | ✉️ email@example.com</p>
+          <p>
+               <a href="#" tabindex="61">LinkedIn</a> |
+               <a href="#" tabindex="62">Instagram</a> |
+               <a href="#" tabindex="63">TikTok</a>
+          </p>
+     </footer>
 
 
+</html>
 
-    <script src="script.js"></script>
     <script>
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const timelineData = {
+            education: [
+                {
+                    title: "Industrial Design",
+                    company: "Nanyang Polytechnic",
+                    startDate: "2020-04",
+                    endDate: "2023-02",
+                    gpa: "2.76",
+                    details: "Diploma in Industrial Design focusing on product development, user-centered design, and manufacturing processes."
+                },
+                {
+                    title: "Graphic Design",
+                    company: "Coursera - California Institute of the Arts",
+                    startDate: "2024-10",
+                    endDate: "2025-03",
+                    details: "Comprehensive course covering visual communication, typography, branding, and digital design principles."
+                },
+                {
+                    title: "Web Design",
+                    company: "Coursera - University of Michigan",
+                    startDate: "2025-04",
+                    endDate: "2025-07",
+                    details: "Web design fundamentals including HTML, CSS, responsive design, and user experience principles."
+                },
+                {
+                    title: "User Experience and Digital Product Design",
+                    company: "Singapore Polytechnic",
+                    startDate: "2024-10",
+                    endDate: "2025-09",
+                    gpa: "3.25",
+                    details: "Specialist Diploma focusing on UX research, prototyping, user interface design, and digital product strategy."
+                }
+            ],
+            experience: [
+                {
+                    title: "Industrial Designer (Internship)",
+                    company: "One Maker Group",
+                    startDate: "2022-08",
+                    endDate: "2022-12",
+                    details: "Industrial designer, Project lead, workshop coach/facilitator, Makerspace coach. Gained hands-on experience in product development and design thinking methodologies."
+                },
+                {
+                    title: "Industrial Designer (Part Time)",
+                    company: "One Maker Group",
+                    startDate: "2023-01",
+                    endDate: "2023-04",
+                    details: "Industrial designer, Project lead, workshop coach/facilitator, Makerspace coach. Continued role with increased responsibilities in project management."
+                },
+                {
+                    title: "Urban Farmer",
+                    company: "Open Farm Community",
+                    startDate: "2023-04",
+                    endDate: "2023-09",
+                    details: "Urban farming - Hydroponics, Microgreens / Traditional landscape farming. Learned sustainable agriculture practices and food production systems."
+                },
+                {
+                    title: "Barista",
+                    company: "Patisserie G Café",
+                    startDate: "2023-04",
+                    endDate: "2023-09",
+                    details: "Barista, Sales, Customer satisfaction. Developed customer service skills and beverage preparation expertise."
+                },
+                {
+                    title: "National Service Full-Time",
+                    company: "Singapore Armed Forces",
+                    startDate: "2023-09",
+                    endDate: "2025-07",
+                    details: "HR, Finance, Events planning, NSF council president. Leadership role managing personnel affairs and organizing community events."
+                },
+                {
+                    title: "Supply Chain Intern",
+                    company: "Elizabeth Arden, Luxasia",
+                    startDate: "2025-09",
+                    endDate: "2025-12",
+                    details: "Supply chain management internship focusing on logistics, inventory management, and operational efficiency in the beauty industry."
+                }
+            ]
+        };
+
+        let tabIndexCounter = 27; // Start after the timeline container
+
+        function parseDate(dateString) {
+            const [year, month] = dateString.split('-');
+            return new Date(parseInt(year), parseInt(month) - 1, 1);
+        }
+
+        function calculatePosition(startDate, endDate) {
+            const baseYear = 2020;
+            const pixelsPerYear = 400;
+            const pixelsPerMonth = pixelsPerYear / 12;
+            
+            const start = parseDate(startDate);
+            const end = parseDate(endDate);
+            
+            // Calculate start position
+            const startYears = start.getFullYear() - baseYear;
+            const startMonths = start.getMonth();
+            const left = (startYears * pixelsPerYear) + (startMonths * pixelsPerMonth);
+            
+            // Calculate width (end one month before the end date)
+            const endYears = end.getFullYear() - baseYear;
+            const endMonths = Math.max(0, end.getMonth() - 1); // End one month before
+            const endPosition = (endYears * pixelsPerYear) + (endMonths * pixelsPerMonth);
+            
+            const width = Math.max(60, endPosition - left); // Minimum width of 60px
+            
+            return { left, width, originalEndPosition: endPosition };
+        }
+
+        function estimateTextWidth(text, fontSize = 11) {
+            // Rough estimation: average character width for the font size
+            const avgCharWidth = fontSize * 0.6;
+            return text.length * avgCharWidth;
+        }
+
+        function canExtendEntry(item, allItemsSameType, maxExtensionMonths = 2) {
+            const pixelsPerMonth = 400 / 12;
+            const currentEndPosition = item.position.left + item.position.width;
+            
+            // Find the next item that starts after this one ends
+            const nextItem = allItemsSameType
+                .filter(other => other.position.left > currentEndPosition)
+                .sort((a, b) => a.position.left - b.position.left)[0];
+            
+            let maxEndPosition;
+            if (nextItem) {
+                // Can extend until 1 month before the next item starts
+                maxEndPosition = nextItem.position.left - pixelsPerMonth;
+            } else {
+                // No next item, can extend by the maximum allowed months
+                maxEndPosition = item.position.originalEndPosition + (maxExtensionMonths * pixelsPerMonth);
+            }
+            
+            const maxPossibleWidth = maxEndPosition - item.position.left;
+            return Math.max(item.position.width, maxPossibleWidth);
+        }
+
+        function adjustWidthForText(items, type) {
+            const minComfortableWidth = 120; // Minimum width for readable text
+            
+            items.forEach(item => {
+                const titleWidth = estimateTextWidth(item.title);
+                const companyWidth = estimateTextWidth(item.company, 10); // Smaller font
+                const requiredWidth = Math.max(titleWidth, companyWidth) + 24; // Add padding
+                
+                if (requiredWidth > item.position.width) {
+                    const maxAllowedWidth = canExtendEntry(item, items);
+                    item.position.width = Math.min(maxAllowedWidth, Math.max(requiredWidth, minComfortableWidth));
+                }
+            });
+        }
+
+        function formatDateRange(startDate, endDate) {
+            const start = parseDate(startDate);
+            const end = parseDate(endDate);
+            
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            
+            const startStr = `${monthNames[start.getMonth()]} ${start.getFullYear()}`;
+            const endStr = `${monthNames[end.getMonth()]} ${end.getFullYear()}`;
+            
+            return `${startStr} - ${endStr}`;
+        }
+
+        function detectOverlaps(items, trackHeight = 120) {
+            const subRows = [];
+            const subRowHeight = 50;
+            const subRowSpacing = 5;
+            const fullRowHeight = trackHeight - 20; // Account for padding
+            
+            items.forEach(item => {
+                let placed = false;
+                
+                // Try to place in existing sub-rows
+                for (let i = 0; i < subRows.length; i++) {
+                    const subRow = subRows[i];
+                    let canPlace = true;
+                    
+                    for (let existingItem of subRow) {
+                        const itemLeft = item.position.left;
+                        const itemRight = item.position.left + item.position.width;
+                        const existingLeft = existingItem.position.left;
+                        const existingRight = existingItem.position.left + existingItem.position.width;
+                        
+                        if (!(itemRight <= existingLeft || itemLeft >= existingRight)) {
+                            canPlace = false;
+                            break;
+                        }
+                    }
+                    
+                    if (canPlace) {
+                        subRow.push(item);
+                        item.subRow = i;
+                        placed = true;
+                        break;
+                    }
+                }
+                
+                // Create new sub-row if needed
+                if (!placed) {
+                    const newSubRowIndex = subRows.length;
+                    subRows.push([item]);
+                    item.subRow = newSubRowIndex;
+                }
+            });
+            
+            // Check each item to see if it has any overlaps in the entire track
+            items.forEach(item => {
+                let hasAnyOverlap = false;
+                
+                for (let otherItem of items) {
+                    if (otherItem === item) continue;
+                    
+                    const itemLeft = item.position.left;
+                    const itemRight = item.position.left + item.position.width;
+                    const otherLeft = otherItem.position.left;
+                    const otherRight = otherItem.position.left + otherItem.position.width;
+                    
+                    // Check if there's any horizontal overlap
+                    if (!(itemRight <= otherLeft || itemLeft >= otherRight)) {
+                        hasAnyOverlap = true;
+                        break;
+                    }
+                }
+                
+                if (!hasAnyOverlap) {
+                    // No overlaps with any other item - take full height
+                    item.height = fullRowHeight;
+                    item.top = 10;
+                } else {
+                    // Has overlaps - use standard sub-row positioning
+                    item.height = subRowHeight;
+                    item.top = (item.subRow * (subRowHeight + subRowSpacing)) + 10;
+                }
+            });
+        }
+
+        function createTimelineItem(data, type) {
+            const position = calculatePosition(data.startDate, data.endDate);
+            const dateRange = formatDateRange(data.startDate, data.endDate);
+            
+            return {
+                ...data,
+                position,
+                dateRange,
+                type
+            };
+        }
+
+        function renderTimeline() {
+            const educationTrack = document.getElementById('education-track');
+            const experienceTrack = document.getElementById('experience-track');
+            
+            // Process education items
+            const educationItems = timelineData.education.map(item => 
+                createTimelineItem(item, 'education')
+            );
+            
+            // Adjust widths for text before detecting overlaps
+            adjustWidthForText(educationItems, 'education');
+            detectOverlaps(educationItems);
+            
+            // Process experience items
+            const experienceItems = timelineData.experience.map(item => 
+                createTimelineItem(item, 'experience')
+            );
+            
+            // Adjust widths for text before detecting overlaps
+            adjustWidthForText(experienceItems, 'experience');
+            detectOverlaps(experienceItems);
+            
+            // Render education items
+            educationItems.forEach(item => {
+                const element = document.createElement('div');
+                element.className = `timeline-item ${item.type}`;
+                element.style.left = `${item.position.left}px`;
+                element.style.width = `${item.position.width}px`;
+                element.style.height = `${item.height}px`;
+                element.style.top = `${item.top}px`;
+                element.tabIndex = tabIndexCounter++;
+                
+                element.innerHTML = `
+                    <h4>${item.title}</h4>
+                    <p>${item.company}</p>
+                `;
+                
+                element.addEventListener('click', () => showModal(item));
+                element.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        showModal(item);
+                    }
+                });
+                
+                educationTrack.appendChild(element);
+            });
+            
+            // Render experience items
+            experienceItems.forEach(item => {
+                const element = document.createElement('div');
+                element.className = `timeline-item ${item.type}`;
+                element.style.left = `${item.position.left}px`;
+                element.style.width = `${item.position.width}px`;
+                element.style.height = `${item.height}px`;
+                element.style.top = `${item.top}px`;
+                element.tabIndex = tabIndexCounter++;
+                
+                element.innerHTML = `
+                    <h4>${item.title}</h4>
+                    <p>${item.company}</p>
+                `;
+                
+                element.addEventListener('click', () => showModal(item));
+                element.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        showModal(item);
+                    }
+                });
+                
+                experienceTrack.appendChild(element);
+            });
+        }
+
+        function showModal(item) {
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modal-body');
+            
+            let modalContent = `
+                <h3>${item.title}</h3>
+                <div class="modal-detail"><strong>Company:</strong> ${item.company}</div>
+                <div class="modal-detail"><strong>Duration:</strong> ${item.dateRange}</div>
+            `;
+            
+            if (item.gpa) {
+                modalContent += `<div class="modal-detail"><strong>GPA:</strong> ${item.gpa}</div>`;
+            }
+            
+            modalContent += `<div class="modal-detail"><strong>Details:</strong> ${item.details}</div>`;
+            
+            modalBody.innerHTML = modalContent;
+            modal.style.display = 'block';
+            
+            // Focus the close button when modal opens
+            setTimeout(() => {
+                document.querySelector('.close').focus();
+            }, 100);
+        }
+
+        // Modal close functionality with keyboard support
+        document.querySelector('.close').addEventListener('click', () => {
+            document.getElementById('modal').style.display = 'none';
+        });
+
+        document.querySelector('.close').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                document.getElementById('modal').style.display = 'none';
+            }
+        });
+
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Handle Escape key for modal
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('modal');
+                const imageModal = document.getElementById('image-modal');
+                if (modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                }
+                if (imageModal.style.display === 'block') {
+                    imageModal.style.display = 'none';
+                }
+            }
+        });
+
+        // Initialize timeline
+        renderTimeline();
     </script>
+
+     
+
+
+
+     <script>
+          document.addEventListener('DOMContentLoaded', () => {
+               // Dark mode
+               const toggleSwitch = document.getElementById('darkmode-toggle');
+               toggleSwitch.addEventListener('change', function () {
+                    document.body.classList.toggle('dark-mode', this.checked);
+               });
+
+               // Carousel functionality
+               const tabs = document.querySelectorAll('.tabs button');
+               const cards = document.querySelectorAll('.project-card');
+               const leftArrow = document.querySelector('.arrow.left');
+               const rightArrow = document.querySelector('.arrow.right');
+               const cardsContainer = document.querySelector('.project-cards-container');
+
+               let currentCategory = 'industrial';
+               let currentIndex = 0;
+
+               function showCategory(category) {
+                    currentCategory = category;
+                    currentIndex = 0;
+
+                    // Update tabs active state
+                    tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.category === category));
+
+                    // Show cards for this category and hide others
+                    cards.forEach(card => {
+                         if (card.dataset.category === category) {
+                              card.style.display = 'flex';
+                         } else {
+                              card.style.display = 'none';
+                         }
+                    });
+
+                    updateCarousel();
+                    updateArrowStates();
+               }
+
+               function updateCarousel() {
+                    const visibleCards = Array.from(cards).filter(card =>
+                         card.dataset.category === currentCategory && card.style.display !== 'none'
+                    );
+
+                    if (visibleCards.length > 0) {
+                         // Remove active class from all cards
+                         cards.forEach(card => card.classList.remove('active'));
+
+                         // Add active class to current card
+                         if (visibleCards[currentIndex]) {
+                              visibleCards[currentIndex].classList.add('active');
+                         }
+
+                         // Scroll to current card
+                         const cardWidth = visibleCards[0].offsetWidth + 16; // include gap
+                         cardsContainer.scrollLeft = currentIndex * cardWidth;
+                    }
+               }
+
+               function updateArrowStates() {
+                    const visibleCards = Array.from(cards).filter(card =>
+                         card.dataset.category === currentCategory && card.style.display !== 'none'
+                    );
+
+                    leftArrow.disabled = currentIndex === 0;
+                    rightArrow.disabled = currentIndex >= visibleCards.length - 1;
+               }
+
+               // Arrow button events
+               leftArrow.addEventListener('click', () => {
+                    if (currentIndex > 0) {
+                         currentIndex--;
+                         updateCarousel();
+                         updateArrowStates();
+                    }
+               });
+
+               rightArrow.addEventListener('click', () => {
+                    const visibleCards = Array.from(cards).filter(card =>
+                         card.dataset.category === currentCategory && card.style.display !== 'none'
+                    );
+
+                    if (currentIndex < visibleCards.length - 1) {
+                         currentIndex++;
+                         updateCarousel();
+                         updateArrowStates();
+                    }
+               });
+
+               // Tab click events
+               tabs.forEach(tab => {
+                    tab.addEventListener('click', () => showCategory(tab.dataset.category));
+               });
+
+               // Initialize
+               showCategory(currentCategory);
+
+               // Handle window resize
+               window.addEventListener('resize', updateCarousel);
+          });
+
+          // Image modal functionality
+const imageModal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-img');
+const closeImage = document.querySelector('.close-image');
+
+// Make all images clickable
+document.querySelectorAll('img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        imageModal.style.display = 'block';
+        // Focus the close button when image modal opens
+        setTimeout(() => {
+            closeImage.focus();
+        }, 100);
+    });
+});
+
+// Close modal with keyboard support
+closeImage.addEventListener('click', () => {
+    imageModal.style.display = 'none';
+});
+
+closeImage.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        imageModal.style.display = 'none';
+    }
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === imageModal) {
+        imageModal.style.display = 'none';
+    }
+});
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const timelineContainer = document.querySelector(".timeline-container");
+    if (timelineContainer) {
+      // Scroll to the rightmost end
+      timelineContainer.scrollLeft = timelineContainer.scrollWidth;
+    }
+  });
+
+     </script>
+
 </body>
 
 </html>
