@@ -2,167 +2,293 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>S T R E T C H</title>
-     <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ryan James Chia - Industrial Designer, UI/UX Designer, and Web Developer Portfolio">
+    <meta name="keywords" content="Industrial Design, UI/UX, Web Development, Portfolio, Ryan James Chia">
+    <meta name="author" content="Ryan James Chia">
+    <title>Ryan James Chia - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-     <!-- Header -->
-     <header>
-          <a href="index.html" class="brand">
-               <img src="Images/TempLogoBlack.png" alt="STRETCH Logo" class="brand-logo light-mode-logo" />
-               <img src="Images/TempLogoWhite.png" alt="STRETCH Logo" class="brand-logo dark-mode-logo" />
-               <div>
-                    <h1>S T R E T C H</h1>
-                    <p>Move better. Feel better.</p>
-               </div>
-          </a>
-          <!-- Hamburger (mobile only) -->
-          <button class="menu-toggle" aria-label="Toggle menu">
-               ☰
-          </button>
-          <nav>
-               <a href="#about">About</a>
-               <a href="#services">Services</a>
-               <a href="#testimonials">Testimonials</a>
-               <a href="#location">Contact</a>
-               <a href="book.html" class="cta">Book Now</a>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <div class="logo">
+            <img src="Images/Image.png" alt="Ryan James Chia Profile Picture" class="profile-icon" tabindex="1">
+            <span class="name">Ryan James Chia</span>
+        </div>
 
-          </nav>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#about" tabindex="2">About</a></li>
+                <li><a href="#timeline" tabindex="3">Education & Experience</a></li>
+                <li><a href="#projects" tabindex="4">Projects</a></li>
+                <li><a href="#contact" id="contactnav" tabindex="5">Contact</a></li>
+            </ul>
+        </nav>
 
-          <div class="theme-switch-wrapper">
-               <!-- SunDark -->
-               <img src="Images/SunDark.png" alt="Sun Dark" class="mode-icon sun-dark" />
+        <div class="dark-mode-toggle" aria-label="Theme toggle">
+            <img src="Images/SunDark.png" alt="" class="mode-icon sun-dark" aria-hidden="true">
+            <img src="Images/SunLight.png" alt="" class="mode-icon sun-light" aria-hidden="true">
 
-               <!-- SunLight -->
-               <img src="Images/SunLight.png" alt="Sun Light" class="mode-icon sun-light" />
+            <label class="theme-switch" for="darkmode-toggle" aria-label="Toggle dark mode">
+                <input type="checkbox" id="darkmode-toggle" tabindex="6" aria-describedby="theme-description">
+                <span class="slider round"></span>
+            </label>
+            <span id="theme-description" class="sr-only"></span>
 
-               <label class="theme-switch" for="darkmode-toggle">
-                    <input type="checkbox" id="darkmode-toggle" />
-                    <span class="slider round"></span>
-               </label>
+            <img src="Images/MoonLight.png" alt="" class="mode-icon moon-light" aria-hidden="true">
+            <img src="Images/MoonDark.png" alt="" class="mode-icon moon-dark" aria-hidden="true">
+        </div>
+    </header>
 
-               <!-- MoonLight -->
-               <img src="Images/MoonLight.png" alt="Moon Light" class="mode-icon moon-light" />
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about" tabindex="7">
+            <div class="about-intro">
+                <img src="Images/Image.png" alt="Ryan James Chia Hero Photo" class="hero-photo" tabindex="8">
+                <h1>Ryan James Chia</h1>
+                <p>
+                    I am a fast learner with a strong curiosity for understanding systems and optimising processes. 
+                    As a proactive problem-solver, I strive to find simple and effective solutions that save time, 
+                    improve productivity, and create smoother experience. With a passion for user-centric design, 
+                    I enjoy enhancing workflows and making interactions more intuitive. As a recent diploma graduate, 
+                    I am actively seeking work experience that will allow me to contribute to a team while continuing 
+                    to grow my skills in design, communication and beyond. I bring a strong work ethic, a willingness 
+                    to adapt, and a genuine enthusiasm to take on new challenges.
+                </p>
+            </div>
 
-               <!-- MoonDark -->
-               <img src="Images/MoonDark.png" alt="Moon Dark" class="mode-icon moon-dark" />
-          </div>
-     </header>
+            <div class="about-skills">
+                <h2>Skills</h2>
+                <div class="skills" role="list" aria-label="Technical skills">
+                    <span class="skill-btn" tabindex="9" role="listitem">Adobe Photoshop</span>
+                    <span class="skill-btn" tabindex="10" role="listitem">Adobe Illustrator</span>
+                    <span class="skill-btn" tabindex="11" role="listitem">Figma</span>
+                    <span class="skill-btn" tabindex="12" role="listitem">Sketch</span>
+                    <span class="skill-btn" tabindex="13" role="listitem">UI/UX Design</span>
+                    <span class="skill-btn" tabindex="14" role="listitem">Web Design</span>
+                    <span class="skill-btn" tabindex="15" role="listitem">3D Modeling</span>
+                    <span class="skill-btn" tabindex="16" role="listitem">HTML/CSS</span>
+                </div>
+            </div>
 
-     <!-- Hero -->
-     <section class="hero">
-          <div class="hero-content">
-               <h2>Feel Better, Move Better</h2>
-               <a href="book.html" class="btn">Book a Session</a>
-          </div>
-     </section>
+            <div class="about-software">
+                <h2>Software</h2>
+                <div class="software" role="list" aria-label="Software proficiency">
+                    <span class="skill-btn" tabindex="17" role="listitem">Adobe Photoshop</span>
+                    <span class="skill-btn" tabindex="18" role="listitem">Adobe Illustrator</span>
+                    <span class="skill-btn" tabindex="19" role="listitem">Figma</span>
+                    <span class="skill-btn" tabindex="20" role="listitem">Sketch</span>
+                    <span class="skill-btn" tabindex="21" role="listitem">Fusion 360</span>
+                    <span class="skill-btn" tabindex="22" role="listitem">KeyShot</span>
+                    <span class="skill-btn" tabindex="23" role="listitem">Blender</span>
+                    <span class="skill-btn" tabindex="24" role="listitem">VS Code</span>
+                </div>
+            </div>
+        </section>
 
-     <!-- About Section -->
-     <section class="about" id="about">
-          <div class="container">
-               <h3>About Us</h3>
-               <p>
-                    At STRETCH, we help you move better, recover faster, and feel amazing.
-                    Our therapists design personalized sessions for mobility, flexibility, and recovery.
-               </p>
-          </div>
-     </section>
-
-     </section>
-
-     <!-- Services -->
-     <section class="services" id="services">
-          <h3>Our Services</h3>
-          <div class="cards">
-               <div class="card">
-                    <img src="Images/Image.png" alt="Stretch Therapy">
-                    <h4>Stretch Therapy</h4>
-               </div>
-               <div class="card">
-                    <img src="Images/Image.png" alt="Sports Recovery">
-                    <h4>Recovery</h4>
-               </div>
-               <div class="card">
-                    <img src="Images/Image.png" alt="Posture Check">
-                    <h4>Posture Check</h4>
-               </div>
-          </div>
-     </section>
-
-     <!-- Testimonials -->
-     <section class="testimonials" id="testimonials">
-          <h3>Happy Clients</h3>
-          <div class="cards">
-               <div class="testimonial-card">
-                    <img src="Images/Image.png" alt="Client Alex" />
-                    <div class="testimonial-text">
-                         <h4>Alex</h4>
-                         <p>"Best stretch session ever!"</p>
+        <!-- TIMELINE SECTION -->
+        <section id="timeline" class="timeline-section" tabindex="25">
+            <h2>Education & Experience</h2>
+            
+            <div class="timeline-container" tabindex="26" role="img" aria-label="Interactive timeline showing education and work experience">
+                <div class="timeline-wrapper">
+                    <!-- Year markers -->
+                    <div class="year-markers" role="presentation" aria-hidden="true">
+                        <div class="year-marker">2020</div>
+                        <div class="year-marker">2021</div>
+                        <div class="year-marker">2022</div>
+                        <div class="year-marker">2023</div>
+                        <div class="year-marker">2024</div>
+                        <div class="year-marker">2025</div>
                     </div>
-               </div>
-               <div class="testimonial-card">
-                    <img src="Images/Image.png" alt="Client Jamie" />
-                    <div class="testimonial-text">
-                         <h4>Jamie</h4>
-                         <p>"My recovery feels faster."</p>
+                    
+                    <!-- Timeline tracks -->
+                    <div class="timeline-tracks">
+                        <!-- Education Track -->
+                        <div class="track" id="education-track" role="group" aria-label="Education timeline">
+                            <div class="track-label">Education</div>
+                        </div>
+                        
+                        <!-- Experience Track -->
+                        <div class="track" id="experience-track" role="group" aria-label="Work experience timeline">
+                            <div class="track-label">Experience</div>
+                        </div>
                     </div>
-               </div>
-          </div>
-     </section>
+                </div>
+            </div>
+        </section>
 
-     <!-- Location Map -->
-     <section class="location-map" id="location">
-          <h3>Find Us Here</h3>
-          <div class="map-container">
-               <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4835.358821042049!2d103.9020293757612!3d1.3062390617128257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1872ea77b11d%3A0x1981346628b0474f!2sS%20T%20R%20E%20T%20C%20H!5e1!3m2!1sen!2sus!4v1758101338146!5m2!1sen!2sus"
-                    width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-               </iframe>
-          </div>
-     </section>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
 
-     <!-- Footer -->
-     <footer>
-          <div class="footer-cols">
-               <div>
-                    <h4>S T R E T C H</h4>
-                    <p>Mobility & recovery specialists.</p>
-               </div>
-               <div>
-                    <h4>Contact</h4>
-                    <p>Email: hello@stretchphysio.example</p>
-                    <p>Phone: +1 (555) 123-4567</p>
-               </div>
-               <div>
-                    <h4>Hours</h4>
-                    <p>Mon - Fri: 8am - 6pm</p>
-                    <p>Sat: 9am - 2pm</p>
-               </div>
-          </div>
-          <div class="copyright">
-               © 2025 S T R E T C H — All rights reserved.
-          </div>
-     </footer>
+            <!-- Category Tabs -->
+            <div class="tabs" role="tablist" aria-label="Project categories">
+                <button data-category="industrial" class="active" tabindex="50" role="tab" 
+                        aria-selected="true" aria-controls="industrial-projects" id="tab-industrial">
+                    Industrial Design
+                </button>
+                <button data-category="uiux" tabindex="51" role="tab" 
+                        aria-selected="false" aria-controls="uiux-projects" id="tab-uiux">
+                    UI/UX
+                </button>
+                <button data-category="webdev" tabindex="52" role="tab" 
+                        aria-selected="false" aria-controls="webdev-projects" id="tab-webdev">
+                    Web Development
+                </button>
+                <button data-category="events" tabindex="53" role="tab" 
+                        aria-selected="false" aria-controls="events-projects" id="tab-events">
+                    Events
+                </button>
+                <button data-category="social" tabindex="54" role="tab" 
+                        aria-selected="false" aria-controls="social-projects" id="tab-social">
+                    Social Media
+                </button>
+                <button data-category="graphic" tabindex="55" role="tab" 
+                        aria-selected="false" aria-controls="graphic-projects" id="tab-graphic">
+                    Graphic Design
+                </button>
+            </div>
 
-     <script>
-          const toggleSwitch = document.getElementById('darkmode-toggle');
+            <!-- Project Carousel -->
+            <div class="project-carousel" role="region" aria-label="Project showcase carousel">
+                <button class="arrow left" tabindex="56" aria-label="Previous project">
+                    <span aria-hidden="true">&#8592;</span>
+                </button>
 
-          toggleSwitch.addEventListener('change', function () {
-               document.body.classList.toggle('dark-mode', this.checked);
-          });
+                <div class="project-cards-container" role="tabpanel" 
+                     aria-labelledby="tab-industrial" id="industrial-projects">
+                    
+                    <!-- Industrial Design Projects -->
+                    <article class="project-card" data-category="industrial" tabindex="57">
+                        <img src="Images/Image.png" alt="Industrial Design Project 1 Preview">
+                        <div class="project-info">
+                            <h3>Project Title 1</h3>
+                            <dl>
+                                <dt>Description:</dt>
+                                <dd>Short description of the project.</dd>
+                                
+                                <dt>Skills:</dt>
+                                <dd>Sketching, CAD</dd>
+                                
+                                <dt>Date:</dt>
+                                <dd>Jan 2025</dd>
+                                
+                                <dt>Details:</dt>
+                                <dd>Your role, challenges, solutions, and results.</dd>
+                            </dl>
+                        </div>
+                    </article>
 
-          const menuToggle = document.querySelector('.menu-toggle');
-          const nav = document.querySelector('header nav');
+                    <article class="project-card" data-category="industrial" tabindex="58">
+                        <img src="Images/Image.png" alt="Industrial Design Project 2 Preview">
+                        <div class="project-info">
+                            <h3>Project Title 2</h3>
+                            <dl>
+                                <dt>Description:</dt>
+                                <dd>Another short description.</dd>
+                                
+                                <dt>Skills:</dt>
+                                <dd>CAD, Prototyping</dd>
+                                
+                                <dt>Date:</dt>
+                                <dd>Mar 2025</dd>
+                                
+                                <dt>Details:</dt>
+                                <dd>Your role, challenges, solutions, and results.</dd>
+                            </dl>
+                        </div>
+                    </article>
 
-          menuToggle.addEventListener('click', () => {
-               nav.classList.toggle('show');
-          });
-     </script>
+                    <!-- UI/UX Projects -->
+                    <article class="project-card" data-category="uiux" tabindex="59">
+                        <img src="Images/Image.png" alt="UI/UX Project 1 Preview">
+                        <div class="project-info">
+                            <h3>UI/UX Project 1</h3>
+                            <dl>
+                                <dt>Description:</dt>
+                                <dd>Short description.</dd>
+                                
+                                <dt>Skills:</dt>
+                                <dd>Figma, Prototyping</dd>
+                                
+                                <dt>Date:</dt>
+                                <dd>Feb 2025</dd>
+                                
+                                <dt>Details:</dt>
+                                <dd>Your role, challenges, solutions, and results.</dd>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
 
+                <button class="arrow right" tabindex="60" aria-label="Next project">
+                    <span aria-hidden="true">&#8594;</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODALS -->
+    <!-- Timeline Details Modal -->
+    <div id="modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content" role="document">
+            <button class="close" tabindex="0" aria-label="Close modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Image Viewer Modal -->
+    <div id="image-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="image-modal-title" aria-hidden="true">
+        <button class="close-image" tabindex="0" aria-label="Close image viewer">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <img class="modal-img" id="modal-img" src="" alt="">
+        <div id="image-modal-title" class="sr-only">Enlarged image view</div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact" role="contentinfo">
+        <div class="footer-content">
+            <h2 class="footer-title">Get In Touch</h2>
+            <p><strong>Ryan James Chia</strong> - Designer, Creator, and Innovator</p>
+            
+            <div class="contact-info">
+                <p>
+                    <span aria-label="Phone number">📞</span>
+                    <a href="tel:+65XXXXXXXX">+65 XXXX XXXX</a>
+                </p>
+                <p>
+                    <span aria-label="Email">✉️</span>
+                    <a href="mailto:email@example.com">email@example.com</a>
+                </p>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" tabindex="61" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="#" tabindex="62" aria-label="Instagram Profile">Instagram</a>
+                <a href="#" tabindex="63" aria-label="TikTok Profile">TikTok</a>
+            </div>
+            
+            <p class="copyright">
+                &copy; <span id="current-year"></span> Ryan James Chia. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
